@@ -11,14 +11,21 @@
         
             <nav class="navbar">
 
-                <div class="logo">Mr P!</div>
-                <ul class="nav-link">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact me</a></li>
+               <div class="logo">Mr P!</div>
 
-                </ul>
+<div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+<ul class="nav-link" id="navLinks">
+    <li><a href="#">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact me</a></li>
+</ul>
+
             </nav>
         
 
@@ -48,16 +55,13 @@
     <section class="container2" id="about">
         <div class="about">
             <h2>About Me</h2>
-            <p class="aboutme">Hey, I’m Tonye Peremobowei, a multidisciplinary creative and the mind behind Mr P Designs. I’m passionate about combining design, technology, and innovation to bring ideas to life in impactful ways.
+            <p class="aboutme">Hi, I’m Tonye Peremobowei, a multidisciplinary creative and the mind behind Mr P Designs. I’m passionate about blending design, technology, and innovation to bring ideas to life in impactful ways.
 
-                I’m a graphic designer and video editor with hands-on experience creating visual content that tells stories, builds brands, and connects with audiences across digital and print media. Beyond design, I also offer IT support and ICT services, helping individuals and businesses solve creative and technical challenges seamlessly.
-                
-                As an AI-driven creative entrepreneur, I love exploring how technology and artificial intelligence can enhance creativity and streamline digital workflows. I’m also currently pursuing a career in web development, focusing on front-end design and development, where I merge aesthetics with functionality to create engaging online experiences.
-                
-                Every project I take on is an opportunity to learn, experiment, and grow while delivering meaningful results. Whether it’s a design project, a website, or a tech solution, I’m all about crafting experiences that leave a lasting impression.
-                
-                Let’s connect and bring something bold, smart, and creative to life.</p>
+I’m a graduate of Computer Science and Informatics from the Federal University Otuoke, Bayelsa State, Nigeira. With hands-on experience as a graphic designer and video editor, creating visual content that builds brands and connects with audiences across digital and print media. I also provide IT support and ICT services, helping individuals and businesses solve both creative and technical challenges efficiently.
 
+As a Prompt Engineer, I explore how artificial intelligence can enhance creativity and streamline digital workflows. I am also pursuing a career in front-end web development, where I combine aesthetics with functionality to create engaging user experiences.
+
+Every project is an opportunity to deliver meaningful results while continuously learning and growing. Let’s connect and create something bold, smart, and creative together.
 
                  <div class="img2">
         <img src="img/portrait.png" alt="my pic">
@@ -199,6 +203,15 @@
         <a href="#top" class="back-to-top">Back To Top</a>
 
     </footer>
+
+    <script>
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("navLinks");
+
+    hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+    });
+</script>
 
 </body>
 </html>
